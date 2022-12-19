@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  /* Ortak tanımlamaları*/
+  .row {
+    margin-top: 40px;
+  }
+  
+  .row::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .col-4 {
+    float: left;
+    width: 25%;
+  }
+  .col-3 {
+    float: left;
+    width: 33.3%;
+  }
+  
+  .col-2 {
+    float: left;
+    width: 50%;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3e4555;
+    font-size: 30px;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  
