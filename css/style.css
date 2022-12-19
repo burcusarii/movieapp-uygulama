@@ -5,15 +5,14 @@
 @import url("buttons.css");
 @import url("base.css");
 
-
 #backtotop {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 1rem;
+  bottom: 1rem;
 }
 
 #backtotop i {
-  font-size: 45px;
+  font-size: 4.5rem;
   color: #0a91eb;
   transition: color 0.6s;
 }
@@ -26,7 +25,7 @@
 
 .main-header {
   background-color: #fc997c;
-  padding: 8px 16px;
+  padding: 0.8rem 1.6rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -34,12 +33,12 @@
 }
 
 main {
-  margin-top: 52px;
+  margin-top: 5.2rem;
 }
 
 .main-nav {
   display: inline-block;
-  width: calc(100% - 101px);
+  width: calc(100% - 10.1rem);
   text-align: right;
   font-family: "Roboto", sans-serif;
 }
@@ -51,14 +50,14 @@ main {
 
 .main-nav__item {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 1rem;
 }
 
 .main-header__logo {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 2.1rem;
 }
 
 .main-nav__item a {
@@ -99,34 +98,55 @@ main {
     url("../img/bg.jpeg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  height: 80vh;
   width: 100%;
   position: relative;
 }
 
+@media (max-width: 576px) {
+  #showcase {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 576px) {
+  #showcase {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  #showcase {
+    height: 60vh;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #showcase {
+    height: 70vh;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 1200px) {
+  #showcase {
+    height: 80vh;
+    background-attachment: fixed;
+  }
+}
+
 #showcase .content {
   color: #fff;
-  font-size: 30px;
-  background-color: rgba(46, 76, 109, 0.2);
-  padding: 20px;
+  font-size: 3rem;
+  padding: 2rem;
   width: 60%;
-  border-radius: 10px;
+  border-radius: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#showcase h1 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 45px;
-  color: #fff;
-  transform: translate(-50%, -50%);
-}
 /* showcase */
 
 /* ************************************************************ */
@@ -134,18 +154,18 @@ main {
 /* how-it-works */
 
 #how-it-works {
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
 }
 
 #how-it-works h2 {
   color: #3e4555;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .icon-box h3 {
   color: #3e4555;
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 
 .icon-box i {
@@ -173,11 +193,11 @@ main {
 
 .features__right,
 .features__left {
-  height: 350px;
+  height: 35rem;
 }
 
 .features__right h3 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 /* Features */
@@ -186,14 +206,14 @@ main {
 /* Plans */
 .plan {
   text-align: center;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .plan_badge {
   background: #fff;
   color: #fc997c;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
 }
 
 .recommended_plan {
@@ -202,8 +222,8 @@ main {
 }
 .inner-plan {
   background-color: #edf5f7;
-  padding: 25px 10px;
-  border-radius: 5px;
+  padding: 2.5rem 1rem;
+  border-radius: 0.5rem;
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   transition: box-shadow 0.2s;
 }
@@ -220,10 +240,17 @@ main {
 
 .plan--featured {
   position: relative;
-  top: -20px;
+  top: -2rem;
+}
+
+@media (max-width: 768px) {
+  .plan--featured {
+    position: relative;
+    top: 0;
+  }
 }
 .plan_features li {
-  margin: 6px 0;
+  margin: 0.6rem 0;
 }
 .clearfix::after {
   content: "";
@@ -246,7 +273,7 @@ main {
 }
 
 .counter__item {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
   color: #fff;
 }
@@ -267,36 +294,37 @@ main {
 
 .card:hover {
   /* top: -10px; */
-  transform: translateY(-10px);
+  transform: translateY(-1rem);
 }
 
 .card-image {
-  max-height: 350px;
+  max-height: 35rem;
 }
 .card-container {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .img-fluid {
   width: 100%;
 }
 .card-body {
-  padding: 30px;
+  padding: 3rem;
 }
 /* Movie-Card */
 /* ************************************************************ */
 /* Footer */
 footer {
   background-color: #2e4c6d;
-  padding: 30px;
-  margin-top: 30px;
+  padding: 3rem;
+  margin-top: 3rem;
   position: relative;
-  bottom: -200px;
+  bottom: -30rem;
 }
+
 
 footer a {
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 
@@ -308,7 +336,7 @@ footer ul {
 footer ul li {
   list-style-type: none;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 
 #social-links {
@@ -316,8 +344,8 @@ footer ul li {
 }
 
 .fab {
-  padding: 10px;
-  font-size: 25px;
+  padding: 1rem;
+  font-size: 2.5rem;
   border-radius: 50%;
 }
 

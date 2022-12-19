@@ -1,21 +1,21 @@
 .signup-page {
-    padding-top: 20px;
+    padding-top: 2rem;
 }
 
 .signup-box {
-    width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    width: 60rem;
+    margin: 2rem auto;
+    padding: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .signup-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 3.3rem;
     color: #2e4c6d;
 }
 
 .signup-form {
-width: 500px;
+width: 50rem;
 margin: auto;
 }
 
@@ -24,25 +24,25 @@ margin: auto;
 .signup-form select {
     display: block;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .signup-form input[type="checkbox"],
 .signup-form input[type="checkbox"]+label {
     display: inline-block;
     width: auto;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .signup-form button[type="submit"] {
     display: block;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .signup-form input:not([type="checkbox"]),
 .signup-form select {
     border: 1px solid #ccc;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
 }
 
 .signup-form input:not([type="checkbox"]):focus, 
@@ -54,8 +54,8 @@ margin: auto;
 
 .signup-form input[type="checkbox"] {
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     border: 1px solid #2e4c6d;
     vertical-align: bottom;
     border-radius: 50%;
